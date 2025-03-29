@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        // Create an array of numbers and sum all the elements using a loop.
+        let numbers = [1, 2, 3, 4, 5];
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        console.log("Sum of numbers:", sum);
+        // Find the longest name in an array of names.
+        let name=["Muhammad","Ali","Jinnah","Iqbal"]
+        let longestName = name[0];
+        for (let i = 1; i < name.length; i++) {
+            if (name[i].length > longestName.length) {
+                longestName = name[i];
+            }
+        }
+        console.log("Longest name:", longestName);
+        // Remove duplicates from an array of numbers manually.
+        let array = [1, 2, 2, 3, 4, 4, 5];
+        let newArray = []
+       
+        for (let i = 0; i < array.length; i++) {
+            if (!newArray.includes(array[i])) {
+                newArray.push(array[i]);
+            }
+        }
+console.log(newArray)
+    </script>
+</body>
+</html>
